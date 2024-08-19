@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/7cDxhRqR9kH
+-->
+
+<style>:root{--background:0 0% 100%;--foreground:240 10% 3.9%;--card:0 0% 100%;--card-foreground:240 10% 3.9%;--popover:0 0% 100%;--popover-foreground:240 10% 3.9%;--primary:240 5.9% 10%;--primary-foreground:0 0% 98%;--secondary:240 4.8% 95.9%;--secondary-foreground:240 5.9% 10%;--muted:240 4.8% 95.9%;--muted-foreground:240 3.8% 45%;--accent:240 4.8% 95.9%;--accent-foreground:240 5.9% 10%;--destructive:0 72% 51%;--destructive-foreground:0 0% 98%;--border:240 5.9% 90%;--input:240 5.9% 90%;--ring:240 5.9% 10%;--chart-1:173 58% 39%;--chart-2:12 76% 61%;--chart-3:197 37% 24%;--chart-4:43 74% 66%;--chart-5:27 87% 67%;--radius:0.5rem;}img[src="/placeholder.svg"],img[src="/placeholder-user.jpg"]{filter:sepia(.3) hue-rotate(-60deg) saturate(.5) opacity(0.8) }</style>
+<style>h1, h2, h3, h4, h5, h6 { font-family: 'Inter', sans-serif; --font-sans-serif: 'Inter'; }
+</style>
+<style>body { font-family: 'Inter', sans-serif; --font-sans-serif: 'Inter'; }
+</style>
+<div class="flex flex-col min-h-dvh">
+  <header class="px-4 lg:px-6 h-14 flex items-center">
+    <a class="flex items-center justify-center" href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="size-6"
+      >
+        <circle cx="12.5" cy="8.5" r="2.5"></circle>
+        <path d="M12.5 2a6.5 6.5 0 0 0-6.22 4.6c-1.1 3.13-.78 3.9-3.18 6.08A3 3 0 0 0 5 18c4 0 8.4-1.8 11.4-4.3A6.5 6.5 0 0 0 12.5 2Z"></path>
+        <path d="m18.5 6 2.19 4.5a6.48 6.48 0 0 1 .31 2 6.49 6.49 0 0 1-2.6 5.2C15.4 20.2 11 22 7 22a3 3 0 0 1-2.68-1.66L2.4 16.5"></path>
+      </svg>
+      <span class="sr-only">Burger Bliss</span>
+    </a>
+    <nav class="ml-auto flex gap-4 sm:gap-6">
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="./menu.html">
+        Menu
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="./about.html">
+        About
+      </a>
+      <a class="text-sm font-medium hover:underline underline-offset-4" href="./contact.html">
+        Contact
+      </a>
+    </nav>
+  </header>
+  <main class="flex-1">
+    <section class="w-full pt-12 md:pt-24 lg:pt-32 border-y">
+      <div class="px-4 md:px-6 space-y-10 xl:space-y-16">
+        <div class="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
+          <div class="flex flex-col items-start space-y-4">
+            <div class="space-y-2">
+              <h1 class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem]">
+                Burger Bliss: Delicious Burgers Delivered
+              </h1>
+              <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                Experience the ultimate burger indulgence with our mouthwatering menu. Order now for fast delivery!
+              </p>
+            </div>
+            <div class="space-x-4">
+              <a
+                href="#"
+                class="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+              >
+                Order Now
+              </a>
+            </div>
+          </div>
+          <img src="./blis.png" width="550" height="320" alt="Burger"
+             class="mx-auto  -mt-20 aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-square"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32" id="menu">
+      <div class="container space-y-12 px-4 md:px-6">
+        <div class="flex flex-col items-center justify-center space-y-4 text-center">
+          <div class="space-y-2">
+            <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Our Delicious Menu</h2>
+            <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Explore our mouthwatering selection of burgers, fries, and more. Order your favorites today!
+            </p>
+          </div>
+        </div>
+        <div class="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
+            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                <div>
+                    <img class="pl-4 h-64 " src="./download (1).jpg" alt="">
+                </div>
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Classic Burger</h3>
+              <p class="text-sm text-muted-foreground">Our signature burger with lettuce, tomato, and onion.</p>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between">
+                <span>$6.99</span>
+                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                  Add to Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <img class="pl-4 h-64" src="./bacon chis.jpg" alt="">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                Bacon Cheeseburger
+              </h3>
+              <p class="text-sm text-muted-foreground">Juicy burger with crispy bacon and melted cheese.</p>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between">
+                <span>$7.99</span>
+                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                  Add to Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <img class="h-72" src="./vigie.jpg" alt=""  >
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Veggie Burger</h3>
+              <p class="text-sm text-muted-foreground">A delicious plant-based burger patty.</p>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between">
+                <span>$6.99</span>
+                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                  Add to Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <img class="h-64" src="./frec.jpg" alt="">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">French Fries</h3>
+              <p class="text-sm text-muted-foreground">Crispy golden fries, perfect for sharing.</p>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between">
+                <span>$3.99</span>
+                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                  Add to Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <img class="h-64 pl6 w-96" src="./piyoz.jpg" alt="">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Onion Rings</h3>
+              <p class="text-sm text-muted-foreground">Breaded and fried to perfection.</p>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between">
+                <span>$4.99</span>
+                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                  Add to Order
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+            <img class="h-64 pl-16" src="./milk.jpg" alt="">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Milkshake</h3>
+              <p class="text-sm text-muted-foreground">Rich and creamy milkshake in various flavors.</p>
+            </div>
+            <div class="p-6">
+              <div class="flex justify-between">
+                <span>$4.99</span>
+                <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                  Add to Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="w-full py-12 md:py-24 lg:py-32" id="about">
+      <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+        <div class="space-y-3">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Burger Bliss</h2>
+          <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Burger Bliss is a family-owned fast food restaurant that has been serving up delicious burgers and sides
+            for over 20 years. We use only the freshest ingredients and our secret recipe to create the perfect
+            burger every time.ood restaurant that has been serving up delicious burgers and sides for over 20 years.
+            We use only the freshest ingredients and our secret
+          </p>
+        </div>
+        <div class="mx-auto w-full max-w-sm space-y-2">
+          <img
+            src="./bb.jpg"
+            width="350"
+            height="300"
+            
+            alt="Burger Bliss"
+            class="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-12 md:py-24 lg:py-32 bg-muted" id="contact">
+      <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+        <div class="space-y-3">
+          <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h2>
+          <p class="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            Have a question or feedback? Get in touch with us and we'll be happy to assist you.
+          </p>
+        </div>
+        <div class="mx-auto w-full max-w-md space-y-4">
+          <form>
+            <div class="grid gap-4">
+              <div>
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="name"
+                >
+                  Name
+                </label>
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  id="name"
+                  placeholder="Enter your name"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="email"
+                >
+                  Email
+                </label>
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  id="email"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+              </div>
+              <div>
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="message"
+                >
+                  Message
+                </label>
+                <textarea
+                  class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  id="message"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+            </div>
+            <button
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 mt-4 w-full"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+    <p class="text-xs text-muted-foreground">© 2024 Burger Bliss. All rights reserved.</p>
+    <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+      <a class="text-xs hover:underline underline-offset-4" href="#">
+        Terms of Service
+      </a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
